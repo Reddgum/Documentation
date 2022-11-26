@@ -14,7 +14,7 @@ This allows file access on USB devices with MSC class, such as USB memory sticks
 ### SD Card
 SD and MMC cards are fully supported as detailed on the [SD tutorial](sd-cards.md) page. Additionally, SPI SD drivers are also supported through the `ManagedFileSystem` software utility [drivers](../drivers/software-utility.md).
 
-The example below requires the `GHIElectronics.TinyCLR.IO` and `GHIElectronics.TinyCLR.Devices.Storage` libraries and a device with an SD card.
+The example below requires the `GHIElectronics.TinyCLR.IO` , `GHIElectronics.TinyCLR.Devices.Storage` and `GHIElectronics.TinyCLR.Pins` libraries and a device with an SD card.
 
 ```cs
 var sd = StorageController.FromName(SC20100.StorageController.SdCard);
